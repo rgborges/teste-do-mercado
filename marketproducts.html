@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="cssfile.css">
+        <title>Mercado de Trabalho </title>
+        <script type="text/javascript" src="javascript.js" ></script>
+    </head>
+
+    <body>
+      <header>
+        <hgroup>
+          <h1> Mercado de Trabalho </h1>
+          <h2> pesquise ou cadastre seu produto</h2>
+          <p><span> Por favor habilite o java script no seu navegador</span></p>
+        </hgroup>
+     </header>
+        <!--
+         * abaixo estará os campos para o usuário preencher os dados necessários para a
+        busca de uma determinada mercadoria.
+         * Os campos a serem preencidos devem ter validação de dados usando preferencialmente
+          javascript.
+         -->
+      <main>
+        <form name="product" method="POST" action="produto.html" onSubmit="return validation();" >
+
+            <!-- formas -->
+            <fieldset>
+              <legend>Produto:</legend>
+                <label for="codigo_mercadoria">Código da Mercadoria*:</label> <input id="codigo" type="text" name="codigo" />                       <br>
+                <label for="tipo_mercadoria"  >Tipo da Mercadoria*:  </label> <input id="tipo_de_mercadoria" type="text" name="tipo_de_mercadoria"> <br>
+                <label for="nome_mercadoria"  >Nome da mercadoria*:  </label> <input id="nome_da_mercadoria" type="text" name="nome_da_mercadoria"> <br>
+                <label for="quantidade"       >Quantidade*:          </label> <input id="quantidade" type="text" name="quantidade">                 <br>
+                <label for="preco"            >Preço em R$*:         </label> <input id="preco" type="text" name="preco">                           <br>
+                  <section>
+                    <header> <legend> Tipo do Negócio*:</legend>
+                      <label for="tipo_de_negocio_compra">Compra:          </label> <input type="radio" id="business_type_compra" name="business_type_compra" value="compra">
+                      <label for="tipo_de_negocio_venda" >Venda:           </label> <input type="radio" id="business_type_venda"  name="business_type_venda"  value="venda">
+                   </section>
+                <!-- botão de submit -->
+
+                <input name="Submit" type="submit" value="procurar">
+
+          </fieldset>
+        </form>
+      </main>
+    <footer>
+      <p>desenvolvido por <i> Rafael Borges Batsita </i> </p>
+      <p>Para maiores contatos: </p>
+      <address> rafael430g@gmail.com </address>
+      <p> Copyright Todos os direitos reservados 2016 </p>
+     </footer>
+    </body>
+</html>
