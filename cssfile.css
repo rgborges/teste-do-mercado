@@ -1,0 +1,46 @@
+header
+{
+
+     font-size:16px;
+     margin: 5px 0;
+     padding: 20px 50px;
+     background-color: #990030;
+     height: 150px;
+     font-family: verdana;
+     border-radius: 2px;
+}
+header h1, h2
+{
+     color: #ffffff;
+}
+form label
+{
+     font-style: normal;
+     font-family: arial;
+}
+form section header
+{
+      background-color: #848484;
+      margin: 5px 0;
+      padding: 10px 50px;
+      height: 80px;
+      font-family: arial;
+      border-radius: 9px;
+}
+form input
+    {
+      margin-left: 20px;
+      margin-top: 6px;
+}
+footer
+{
+      background-color: #585858;
+      height: 150px;
+      border-radius: 15px;
+}
+footer p, address
+{
+      text-align: center;
+      color: #ffffff;
+      margin-top: 5px;
+}
