@@ -2,7 +2,7 @@
 
 <html lang="pt">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="cssfile.css">
         <title>Mercado de Trabalho </title>
         <script type="text/javascript" src="javascript.js" ></script>
@@ -12,6 +12,7 @@
       <header>
         <hgroup>
           <h1> Mercado de Trabalho </h1>
+
           <h2> pesquise ou cadastre seu produto</h2>
           <p><span> Por favor habilite o java script no seu navegador</span></p>
         </hgroup>
@@ -23,16 +24,21 @@
           javascript.
          -->
       <main>
-        <form name="product" method="POST" action="produto.html" onSubmit="return validation();" >
+        <form name="product" method="POST" action="table.php" onSubmit="return validation();" >
 
             <!-- formas -->
             <fieldset>
               <legend>Produto:</legend>
-                <label for="codigo_mercadoria">Código da Mercadoria*:</label> <input id="codigo" type="text" name="codigo" />                       <br>
-                <label for="tipo_mercadoria"  >Tipo da Mercadoria*:  </label> <input id="tipo_de_mercadoria" type="text" name="tipo_de_mercadoria"> <br>
-                <label for="nome_mercadoria"  >Nome da mercadoria*:  </label> <input id="nome_da_mercadoria" type="text" name="nome_da_mercadoria"> <br>
-                <label for="quantidade"       >Quantidade*:          </label> <input id="quantidade" type="text" name="quantidade">                 <br>
-                <label for="preco"            >Preço em R$*:         </label> <input id="preco" type="text" name="preco">                           <br>
+                <label for="codigo_mercadoria">Código da Mercadoria*:
+                <input id="codigo" type="text" name="codigo" >                                             </label> <br>
+                <label for="tipo_mercadoria"  >Tipo da Mercadoria*:   
+                <input id="tipo_de_mercadoria" type="text" name="tipo_de_mercadoria">                      </label> <br>
+                <label for="nome_mercadoria"  >Nome da mercadoria*:   
+                <input id="nome_da_mercadoria" type="text" name="nome_da_mercadoria">                      </label> <br>
+                <label for="quantidade"       >Quantidade*:          
+                <input id="quantidade" type="number" name="quantidade" min="0" step="1">                   </label> <br>
+                <label for="preco"            >Preço em R$*:         
+                <input id="preco" type="text" name="preco">                                                </label> <br>
                   <section>
                     <header> <legend> Tipo do Negócio*:</legend>
                       <label for="tipo_de_negocio_compra">Compra:          </label> <input type="radio" id="business_type_compra" name="business_type_compra" value="compra">
